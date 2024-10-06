@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basal Metabolic Rate Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <section class="container">
+        <header></header>
+        <form action="#" class="form">
+            <div class="input-box">
+                <label>Peso: </label> <br>
+                <input type="text" placeholder="kg">
+            </div>
+            <div class="input-box">
+                <label>Altura: </label> <br>
+                <input type="text" placeholder="cm">
+            </div>
+            <div class="input-box">
+                <label>Idade: </label> <br>
+                <input type="text">
+            </div>
+            <div class="input-box">
+                <label>Atividades exercidas: </label> <br>
+            </div>
+            <div class="column"> 
+                <div>
+                    <button>Estudo</button>
+                </div>
+                <div>
+                    <button>Trabalho</button>
+                </div>
+                <div>
+                    <button>Treino</button>
+                </div>
+            </div>
+            <div class="gender-box">
+                <label>Sexo: </label> <br>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender">
+                        <label for="check-male">Masculino</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender">
+                        <label for="check-female">Feminino</label>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
     <script src="app.js"></script>
 </body>
+
 </html>
