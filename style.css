@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
+/* Body */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +12,6 @@
 body {
     min-height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
     padding: 20px;
     background-color: #F1F1E8;
@@ -20,9 +21,11 @@ body {
     margin-top: 30px;
 }
 
-.form .input-box {
+/* Inputs */ 
+
+.form :where(.input-box, .title) {
     width: 100%;
-    margin-top: 15px
+    margin-top: 15px;
 }
 
 .input-box label {
@@ -41,10 +44,7 @@ body {
     background-color: #F1F1E8;
 }
 
-.form .column {
-    display: flex;
-    column-gap: 15px;
-}
+/* Gender */ 
 
 .form .gender-box {
     margin-top: 15px;
@@ -64,6 +64,72 @@ body {
 .form :where(.gender input, .gender label) {
     cursor: pointer;
 }
+
+.form .gender input {
+    width: 25px;
+    height: 30px;
+}
+
+/* Column1 */
+
+.form .column1 {
+    margin-top: 15px;
+}
+
+.form .column1-options {
+    display: flex;
+    column-gap: 15px;
+}
+
+.form .column1-options button {
+    position: relative;
+    height: 40px;
+    width: 105px;
+    color: #000000cc;
+    margin-top: 5px;
+    border: 1px solid #00000070;
+    border-radius: 10px;
+    padding: 0 10px;
+    background-color: #F1F1E8;
+    text-align: center;
+    cursor: pointer; 
+}
+
+.form .column1-options button:hover {
+    background-color: #AED07A;
+}
+
+/* Column2 */
+
+.form .column2 {
+    margin-top: 15px;
+}
+
+.form .column2-options button {
+    position: relative;
+    height: 40px;
+    width: 350px;
+    color: #000000cc;
+    margin-top: 5px;
+    border: 1px solid #00000070;
+    border-radius: 10px;
+    padding: 0 10px;
+    background-color: #F1F1E8;
+    text-align: left;
+    cursor: pointer;
+}
+
+.form .column2-options button:hover {
+    background-color: #AED07A;
+}
+
+.form .column2-options div {
+    margin-bottom: 15px;
+}
+
+/* Calculate */
+
+/* Responsive */
 
 @media screen and (max-width: 500px) {
     .form .column {
