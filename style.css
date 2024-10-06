@@ -18,7 +18,7 @@ body {
 }
 
 .container .form {
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 /* Inputs */ 
@@ -128,6 +128,44 @@ body {
 }
 
 /* Calculate */
+
+.form .calculate {
+    color: #F1F1E8;
+    background-color: #334531;
+    position: relative;
+    height: 40px;
+    width: 350px;
+    margin-top: 5px;
+    border: 1px solid #00000070;
+    border-radius: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+/* Output box */
+
+.form .output-box input{
+    position: relative;
+    height: 100px;
+    width: 350px;
+    color: #000000cc;
+    margin-top: 20px;
+    border: 1px solid #00000070;
+    border-radius: 10px;
+    padding: 0 10px;
+    background-color: #F1F1E8;
+    text-align: left;
+    cursor: default; 
+    pointer-events: none;
+}
+
+/* Final text */
+.form p {
+    margin-top: 10px;
+    width: 350px;
+    height: 105px;
+    text-align: justify;
+}
 
 /* Responsive */
 
