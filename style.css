@@ -82,7 +82,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .form .activities-performed-items div {
@@ -117,8 +116,7 @@ body {
     background-color: #AED07A;
 }
 
-.form .activities-performed-items div label input[type="checkbox"]:checked ~ span
-{
+.form .activities-performed-items div label input[type="checkbox"]:checked~span {
     transition: 0.5s;
     background-color: #AED07A;
 }
@@ -204,5 +202,9 @@ body {
 
     .form :where(.gender-option, .gender) {
         row-gap: 15px;
+    }
+
+    .form .activities-performed-items {
+        padding: 5px 20px;
     }
 }
