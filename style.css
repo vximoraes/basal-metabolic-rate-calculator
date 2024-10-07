@@ -86,7 +86,7 @@ body {
 }
 
 .form .activities-performed-items div {
-    flex-shrink: 1;
+    flex-shrink: 0.5;
     margin-top: 5px;
     margin-right: 23px;
 }
@@ -203,9 +203,5 @@ body {
 
     .form :where(.gender-option, .gender) {
         row-gap: 15px;
-    }
-
-    .form .activities-performed-items div label span {
-        padding: 6px 19px; 
     }
 }
