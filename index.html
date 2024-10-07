@@ -37,47 +37,56 @@
                     </div>
                 </div>
             </div>
-            <div class="column1"> 
+            <div class="activities-performed">
                 <label>Atividades exercidas: </label> <br>
-                <div class="column1-options">
-                    <div>
-                        <button>Estudo</button>
-                    </div>
-                    <div>
-                        <button>Trabalho</button>
-                    </div>
-                    <div>
-                        <button>Treino</button>
-                    </div>
+                <div>
+                    <label>
+                        <input type="checkbox">
+                        <span>Estudo</span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="checkbox">
+                        <span>Trabalho</span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="checkbox">
+                        <span>Treino</span>
+                    </label>
                 </div>
             </div>
-            <div class="column2"> 
+            <div class="column2">
                 <label>Objetivo: </label> <br>
                 <div class="column2-options">
-                    <div>
-                        <button>Perder Gordura</button>
-                    </div>
-                    <div>
-                        <button>Manter Peso</button>
-                    </div>
-                    <div>
-                        <button>Ganhar Massa</button>
-                    </div>
-                </div> 
+                    <select name="" class="objective">
+                        <option data-default disabled selected></option>
+                        <option>Perder Gordura</option>
+                        <option>Manter Peso</option>
+                        <option>Ganhar Massa</option>
+                    </select>
+                </div>
             </div>
             <div>
                 <button class="calculate">Calcular</button>
             </div>
             <div class="output-box">
-                <input type="text"> 
+                <input type="text">
             </div>
-            <p>* Os valores finais não são 100% precisos, sendo 
-                baseados apenas nos meus conhecimentos 
-                pessoais e cálculos matemáticos. Para uma 
-                melhor avaliação, consulte um médico 
+            <p class="final-text">* Os valores finais não são 100% precisos, sendo
+                baseados apenas nos meus conhecimentos
+                pessoais e cálculos matemáticos. Para uma
+                melhor avaliação, consulte um médico
                 especializado.</p>
         </form>
     </section>
+    <footer>
+        <p class="license">
+            Basal Metabolical Rate Calculator © 2024 by Vinícius Moraes is licensed under CC BY-NC 4.0
+        </p>
+    </footer>
 
     <script src="app.js"></script>
 </body>

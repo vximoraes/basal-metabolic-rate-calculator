@@ -12,7 +12,9 @@
 body {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 20px;
     background-color: #F1F1E8;
 }
@@ -21,7 +23,7 @@ body {
     margin-top: 60px;
 }
 
-/* Inputs */ 
+/* Inputs */
 
 .form :where(.input-box, .title) {
     width: 100%;
@@ -44,7 +46,7 @@ body {
     background-color: #F1F1E8;
 }
 
-/* Gender */ 
+/* Gender */
 
 .form .gender-box {
     margin-top: 15px;
@@ -70,9 +72,9 @@ body {
     height: 30px;
 }
 
-/* Column1 */
+/* Activities performed */
 
-.form .column1 {
+.form .activities-performed {
     margin-top: 15px;
 }
 
@@ -92,20 +94,20 @@ body {
     padding: 0 10px;
     background-color: #F1F1E8;
     text-align: center;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .form .column1-options button:hover {
     background-color: #AED07A;
 }
 
-/* Column2 */
+/* Objective */
 
 .form .column2 {
     margin-top: 15px;
 }
 
-.form .column2-options button {
+.form .objective {
     position: relative;
     height: 40px;
     width: 350px;
@@ -117,14 +119,7 @@ body {
     background-color: #F1F1E8;
     text-align: left;
     cursor: pointer;
-}
-
-.form .column2-options button:hover {
-    background-color: #AED07A;
-}
-
-.form .column2-options div {
-    margin-bottom: 15px;
+    transition: opacity .3s ease;
 }
 
 /* Calculate */
@@ -135,7 +130,7 @@ body {
     position: relative;
     height: 40px;
     width: 350px;
-    margin-top: 5px;
+    margin-top: 20px;
     border: 1px solid #00000070;
     border-radius: 10px;
     padding: 0 10px;
@@ -144,7 +139,7 @@ body {
 
 /* Output box */
 
-.form .output-box input{
+.form .output-box input {
     position: relative;
     height: 100px;
     width: 350px;
@@ -155,16 +150,27 @@ body {
     padding: 0 10px;
     background-color: #F1F1E8;
     text-align: left;
-    cursor: default; 
+    cursor: default;
     pointer-events: none;
 }
 
 /* Final text */
-.form p {
-    margin-top: 10px;
+
+.form .final-text {
+    margin-top: 15px;
     width: 350px;
     height: 105px;
     text-align: justify;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* License */
+
+.license {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    align-items: center;
+    text-align: center;
 }
 
 /* Responsive */
@@ -173,6 +179,7 @@ body {
     .form .column {
         flex-wrap: wrap;
     }
+
     .form :where(.gender-option, .gender) {
         row-gap: 15px;
     }
