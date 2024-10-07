@@ -12,31 +12,37 @@
     <section class="container">
         <header></header>
         <form action="#" class="form">
-            <div class="input-box">
-                <label>Peso: </label> <br>
-                <input type="text" placeholder="kg">
+
+            <!--Text-->
+            <div class="text-box">
+                <label>Peso:</label> <br>
+                <input type="text" placeholder="kg" id="weight">
             </div>
-            <div class="input-box">
-                <label>Altura: </label> <br>
-                <input type="text" placeholder="cm">
+            <div class="text-box">
+                <label>Altura:</label> <br>
+                <input type="text" placeholder="cm" id="height">
             </div>
-            <div class="input-box">
-                <label>Idade: </label> <br>
-                <input type="text">
+            <div class="text-box">
+                <label>Idade:</label> <br>
+                <input type="text" placeholder="anos" id="age">
             </div>
+
+            <!--Gender-->
             <div class="gender-box">
                 <label>Sexo: </label> <br>
                 <div class="gender-option">
                     <div class="gender">
-                        <input type="radio" id="check-male" name="gender">
+                        <input type="radio" id="check-male" name="gender" value="Male">
                         <label for="check-male">Masculino</label>
                     </div>
                     <div class="gender">
-                        <input type="radio" id="check-female" name="gender">
+                        <input type="radio" id="check-female" name="gender" value="Female">
                         <label for="check-female">Feminino</label>
                     </div>
                 </div>
             </div>
+
+            <!--Activities-Performed-->
             <div class="activities-performed">
                 <label>Atividades exercidas: </label> <br>
                 <div class="activities-performed-items">
@@ -54,12 +60,14 @@
                     </div>
                     <div>
                         <label>
-                            <input type="checkbox"> 
+                            <input type="checkbox">
                             <span>Treino</span>
                         </label>
                     </div>
                 </div>
             </div>
+
+            <!--Goal-->
             <div class="column2">
                 <label>Objetivo: </label> <br>
                 <div class="column2-options">
@@ -71,11 +79,15 @@
                     </select>
                 </div>
             </div>
+
+            <!--Calculate-->
             <div>
-                <button class="calculate">Calcular</button>
+                <button class="calculate" id="calculate">Calcular</button>
             </div>
+
+            <!--Output-->
             <div class="output-box">
-                <input type="text">
+                <input type="text" id="output-box">
             </div>
             <p class="final-text">* Os valores finais não são 100% precisos, sendo
                 baseados apenas nos meus conhecimentos

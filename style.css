@@ -28,18 +28,18 @@ body {
     margin-top: 60px;
 }
 
-/* Inputs */
+/* Text-Boxes */
 
-.form :where(.input-box, .title) {
+.form :where(.text-box, .title) {
     width: 100%;
     margin-top: 15px;
 }
 
-.input-box label {
+.text-box label {
     color: black;
 }
 
-.form .input-box input {
+.form .text-box input {
     position: relative;
     height: 40px;
     width: 350px;
@@ -193,6 +193,7 @@ body {
     text-align: left;
     cursor: default;
     pointer-events: none;
+    font-size: 14px;
 }
 
 /* Final text */
