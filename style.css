@@ -101,6 +101,7 @@ body {
 
 .form .activities-performed-items div label input[type="checkbox"] {
     opacity: 0;
+    position: absolute;
 }
 
 .form .activities-performed-items div label span {
