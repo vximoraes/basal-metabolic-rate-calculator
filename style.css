@@ -206,10 +206,6 @@ body {
         row-gap: 15px;
     }
 
-    .form .activities-performed-items {
-        justify-content: space-between;
-    }
-
     .form .activities-performed-items div label span {
         padding: 4px 10px; 
         font-size: 14px; 
