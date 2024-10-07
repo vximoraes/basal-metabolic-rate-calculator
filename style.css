@@ -82,9 +82,11 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: nowrap;
 }
 
 .form .activities-performed-items div {
+    flex-shrink: 1;
     margin-top: 5px;
     margin-right: 23px;
 }
@@ -205,6 +207,12 @@ body {
     }
 
     .form .activities-performed-items {
-        padding: 5px 20px;
+        justify-content: space-between;
+    }
+
+    .form .activities-performed-items div label span {
+        padding: 4px 10px; 
+        font-size: 14px; 
+        transform: scale(0.8);
     }
 }
