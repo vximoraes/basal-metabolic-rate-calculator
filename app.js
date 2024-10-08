@@ -32,23 +32,23 @@ document.getElementById("calculate").addEventListener('click', (e) => {
             caloricExpenditure = bmr * 1.6
         }
 
-        // Calculate Ideal Calorie Consumption (ICC)
+        // Calculate Ideal Calorie Intake (ICI)
         let selectedGoal = document.getElementById("goal");
         let goal = selectedGoal.value;
-        let icc;
+        let ici;
 
-        if(goal == "Perder Gordura") {
-            icc = caloricExpenditure - 300;
-        } else if (goal == "Manter Peso") {
-            icc = caloricExpenditure;
-        } else if (goal == "Ganhar Massa") {
-            icc = caloricExpenditure + 300;
+        if(goal == "Lose Weight") {
+            ici = caloricExpenditure - 300;
+        } else if (goal == "Maintain Weight") {
+            ici = caloricExpenditure;
+        } else if (goal == "Gain Weight") {
+            ici = caloricExpenditure + 300;
         }
 
         // Output
-        document.getElementById("output-box").innerHTML = `Taxa metabólica Basal(TMB): ${bmr.toFixed(2)} <br>
-        Gasto Calórico: ${caloricExpenditure.toFixed(2)} <br>
-        Consumo de Calorias Ideal: ${icc.toFixed(2)}`
+        document.getElementById("output-box").innerHTML = `Basal Metabolic Rate (BMR): ${bmr.toFixed(2)} <br>
+        Caloric Expenditure: ${caloricExpenditure.toFixed(2)} <br>
+        Ideal Calorie Intake: ${ici.toFixed(2)}`;
     }
     calculateBMR();
 })

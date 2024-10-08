@@ -97,20 +97,25 @@ body {
 /* Activities performed */
 
 .form .activities-performed {
+    max-width: 350px;
     margin-top: 15px;
 }
 
 .form .activities-performed-items {
-    max-width: 1200px;
+    max-width: 350px;
     margin: 0 auto;
     display: flex;
     flex-wrap: nowrap;
+    gap: 10px;
 }
 
 .form .activities-performed-items div {
+    flex: 1 1 100px;
+    max-width: 150px;
+    box-sizing: border-box;
     flex-shrink: 0.5;
     margin-top: 5px;
-    margin-right: 23px;
+
 }
 
 .form .activities-performed-items div label {
@@ -119,6 +124,7 @@ body {
 
 .form .activities-performed-items div label {
     cursor: pointer;
+    width: 100%;
 }
 
 .form .activities-performed-items div label input[type="checkbox"] {
@@ -127,6 +133,7 @@ body {
     width: 0;
     height: 0;
     pointer-events: auto;
+    width: 100%;
 }
 
 .form .activities-performed-items div label span {
@@ -137,6 +144,8 @@ body {
     border-radius: 10px;
     background-color: #F1F1E8;
     transition: background-color 0.5s ease;
+    width: 100%;
+    text-align: center;
 }
 
 .form .activities-performed-items div label input[type="checkbox"]:checked~span {
@@ -144,7 +153,7 @@ body {
     transition: background-color 0.5s ease;
 }
 
-/* Objective */
+/* Goal */
 
 .form .goals {
     margin-top: 15px;
