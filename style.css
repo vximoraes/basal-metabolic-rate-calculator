@@ -19,9 +19,11 @@ body {
     background-color: #F1F1E8;
 }
 
+/* Container */
+
 .container {
     max-width: 500px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .container .form {
@@ -65,12 +67,12 @@ body {
 }
 
 .form .gender input[type="radio"] {
-    display: none; 
+    display: none;
 }
 
 .form .gender label {
     position: relative;
-    padding-left: 30px; 
+    padding-left: 30px;
     margin-top: 5px;
     cursor: pointer;
 }
@@ -80,16 +82,16 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    width: 20px; 
-    height: 20px; 
-    border: 1px solid #000; 
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
     border-radius: 50%;
     background-color: #F1F1E8;
-    transition: background-color 0.5s; 
+    transition: background-color 0.5s;
 }
 
-.form .gender input[type="radio"]:checked + label::before {
-    background-color: #AED07A; 
+.form .gender input[type="radio"]:checked+label::before {
+    background-color: #AED07A;
 }
 
 /* Activities performed */
@@ -144,11 +146,11 @@ body {
 
 /* Objective */
 
-.form .column2 {
+.form .goals {
     margin-top: 15px;
 }
 
-.form .objective {
+.form .goal {
     position: relative;
     height: 40px;
     width: 350px;
@@ -180,7 +182,9 @@ body {
 
 /* Output box */
 
-.form .output-box input {
+.form .output-box p {
+    display: flex;
+    align-items: center;
     position: relative;
     height: 100px;
     width: 350px;
@@ -188,12 +192,11 @@ body {
     margin-top: 20px;
     border: 1px solid #00000070;
     border-radius: 10px;
-    padding: 0 10px;
+    padding: 15px 10px;
     background-color: #F1F1E8;
     text-align: left;
-    cursor: default;
-    pointer-events: none;
     font-size: 14px;
+    font-weight: 500;
 }
 
 /* Final text */
