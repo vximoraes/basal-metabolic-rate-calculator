@@ -1,5 +1,6 @@
 document.getElementById("calculate").addEventListener('click', (e) => {
     e.preventDefault();
+
     function calculateBMR() {
         // Calculate Basal Metabolic Rate (BMR)
         let weight = parseInt(document.getElementById("weight").value);
@@ -7,7 +8,7 @@ document.getElementById("calculate").addEventListener('click', (e) => {
         let age = parseInt(document.getElementById("age").value);
         let selectedGender = document.querySelector("input[name='gender']:checked").value;
         let bmr;
-        
+
         if (selectedGender == "Male") {
             bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age);
         } else if (selectedGender == "Female") {
@@ -37,7 +38,7 @@ document.getElementById("calculate").addEventListener('click', (e) => {
         let goal = selectedGoal.value;
         let ici;
 
-        if(goal == "Lose Weight") {
+        if (goal == "Lose Weight") {
             ici = caloricExpenditure - 300;
         } else if (goal == "Maintain Weight") {
             ici = caloricExpenditure;
@@ -50,5 +51,6 @@ document.getElementById("calculate").addEventListener('click', (e) => {
         Caloric Expenditure: ${caloricExpenditure.toFixed(2)} <br>
         Ideal Calorie Intake: ${ici.toFixed(2)}`;
     }
+
     calculateBMR();
 })
