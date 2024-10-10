@@ -29,7 +29,7 @@ Overall, this little project enhanced my technical skills and understanding of w
 ## Run Locally
 1. Clone this repository using the command:
 ```bash
-git@github.com:vximoraes/basal-metabolic-rate-calculator.git
+git clone git@github.com:vximoraes/basal-metabolic-rate-calculator.git
 ```
 2. Open the `index.html` file in your web browser.
 3. Fill in the required fields and click on the "Calculate" button to see the results.
