@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 /* Body */
-
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +19,6 @@ body {
 }
 
 /* Header */
-
 header {
     display: flex;
     flex-direction: column;
@@ -41,7 +39,6 @@ header p {
 }
 
 /* Container */
-
 .container {
     max-width: 500px;
     width: 100%;
@@ -56,7 +53,6 @@ header p {
 }
 
 /* Text-Boxes */
-
 .form :where(.text-box, .title) {
     width: 100%;
     margin-top: 15px;
@@ -79,7 +75,6 @@ header p {
 }
 
 /* Gender */
-
 .form .gender-box {
     margin-top: 15px;
 }
@@ -120,7 +115,6 @@ header p {
 }
 
 /* Activities performed */
-
 .form .activities-performed {
     max-width: 350px;
     margin-top: 15px;
@@ -184,7 +178,6 @@ header p {
 }
 
 /* Goal */
-
 .form .goals {
     margin-top: 15px;
 }
@@ -205,7 +198,6 @@ header p {
 }
 
 /* Calculate */
-
 .form .calculate {
     color: #F1F1E8;
     background-color: #334531;
@@ -225,7 +217,6 @@ header p {
 }
 
 /* Output box */
-
 .form .output-box p {
     display: flex;
     align-items: center;
@@ -244,7 +235,6 @@ header p {
 }
 
 /* Final text */
-
 .form .final-text {
     margin-top: 15px;
     width: 350px;
@@ -254,7 +244,6 @@ header p {
 }
 
 /* License */
-
 .license {
     margin-top: 80px;
     align-items: center;
@@ -263,7 +252,6 @@ header p {
 }
 
 /* Footer */
-
 footer {
     text-align: center;
     padding: 10px;
@@ -282,7 +270,6 @@ footer {
 }
 
 /* Responsive */
-
 @media screen and (max-width: 500px) {
     .form .column {
         flex-wrap: wrap;
