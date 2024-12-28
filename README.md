@@ -1,7 +1,7 @@
 # 🌱 Basal Metabolic Rate Calculator
 A web application that estimates the basal metabolic rate and ideal caloric intake for individuals based on their weight, height, age, gender, and activity level. This tool helps users to understand their caloric needs for weight management, whether they aim to lose, maintain, or gain weight.
 
-![bmr-calculator](https://github.com/user-attachments/assets/fd274f22-a42c-4920-927d-9db4b7c63dd3)
+![basal-metabolic-rate-calculator](https://github.com/user-attachments/assets/e037ff0e-75d2-4fee-9f07-ac006dd24edf)
 
 ## 🛠️ Technologies
 <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /> <img alt="Javascript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white" />
