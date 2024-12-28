@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <section class="container">
+    <main class="container">
         <header>
             <p>Basal Metabolic Rate Calculator</p>
         </header>
@@ -17,16 +17,16 @@
 
             <!--Text-->
             <div class="text-box">
-                <label>Weight:</label> <br>
-                <input type="text" placeholder="kg" id="weight">
+                <label for="weight">Weight:</label> <br>
+                <input type="text" placeholder="kg" id="weight" required>
             </div>
             <div class="text-box">
-                <label>Height:</label> <br>
-                <input type="text" placeholder="cm" id="height">
+                <label for="height">Height:</label> <br>
+                <input type="text" placeholder="cm" id="height" required>
             </div>
             <div class="text-box">
-                <label>Age:</label> <br>
-                <input type="text" placeholder="years" id="age">
+                <label for="age">Age:</label> <br>
+                <input type="text" placeholder="years" id="age" required>
             </div>
 
             <!--Gender-->
@@ -34,11 +34,11 @@
                 <label>Gender: </label> <br>
                 <div class="gender-option">
                     <div class="gender">
-                        <input type="radio" id="check-male" name="gender" value="Male">
+                        <input type="radio" id="check-male" name="gender" value="Male" required>
                         <label for="check-male">Male</label>
                     </div>
                     <div class="gender">
-                        <input type="radio" id="check-female" name="gender" value="Female">
+                        <input type="radio" id="check-female" name="gender" value="Female" required>
                         <label for="check-female">Female</label>
                     </div>
                 </div>
@@ -71,9 +71,9 @@
 
             <!--Goal-->
             <div class="goals">
-                <label>Goal: </label> <br>
+                <label for="goal">Goal: </label> <br>
                 <div class="goal-options">
-                    <select class="goal" id="goal">
+                    <select class="goal" id="goal" required>
                         <option data-default disabled selected></option>
                         <option>Lose Weight</option>
                         <option>Maintain Weight</option>
@@ -84,7 +84,7 @@
 
             <!--Calculate-->
             <div>
-                <button class="calculate" id="calculate">Calculate</button>
+                <button class="calculate" id="calculate" type="submit">Calculate</button>
             </div>
 
             <!--Output-->
@@ -93,18 +93,15 @@
             </div>
 
             <!--Warning-Text-->
-            <p class="final-text">* The final values ​​are not 100% accurate,
-                being based only on my personal
-                knowledge and mathematical calculations.
-                For a better assessment, consult a
-                specialized doctor.</p>
+            <p class="final-text">* The final values ​​are not 100% accurate, being based only on my personal
+                knowledge and mathematical calculations. For a better assessment, consult a specialized doctor.</p>
 
         </form>
-    </section>
+    </main>
 
     <footer>
         <p class="license">
-            Basal Metabolical Rate Calculator © 2024 by Vinícius Moraes is licensed under CC BY-NC 4.0
+            Basal Metabolic Rate Calculator © 2024 by Vinícius Moraes is licensed under CC BY-NC 4.0
         </p>
         <hr>
         <div class="social-links">
